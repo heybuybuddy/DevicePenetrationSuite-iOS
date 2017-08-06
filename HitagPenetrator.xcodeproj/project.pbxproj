@@ -12,6 +12,12 @@
 		5AAFAB341F338521008DB9AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AAFAB321F338521008DB9AB /* Main.storyboard */; };
 		5AAFAB361F338521008DB9AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAFAB351F338521008DB9AB /* Assets.xcassets */; };
 		5AAFAB391F338521008DB9AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AAFAB371F338521008DB9AB /* LaunchScreen.storyboard */; };
+		5AAFAB421F338CDA008DB9AB /* BleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFAB411F338CDA008DB9AB /* BleHandler.swift */; };
+		5AAFAB441F338D15008DB9AB /* HitagCharacteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFAB431F338D15008DB9AB /* HitagCharacteristics.swift */; };
+		5AAFAB461F3393BD008DB9AB /* BleFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFAB451F3393BD008DB9AB /* BleFinder.swift */; };
+		5AAFAB481F339414008DB9AB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFAB471F339414008DB9AB /* Utilities.swift */; };
+		5AAFAB4B1F33A81D008DB9AB /* HitagCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAFAB4A1F33A81D008DB9AB /* HitagCellView.xib */; };
+		5AAFAB4D1F33B050008DB9AB /* HitagCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFAB4C1F33B050008DB9AB /* HitagCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		5AAFAB351F338521008DB9AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AAFAB381F338521008DB9AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AAFAB3A1F338521008DB9AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AAFAB411F338CDA008DB9AB /* BleHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleHandler.swift; sourceTree = "<group>"; };
+		5AAFAB431F338D15008DB9AB /* HitagCharacteristics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitagCharacteristics.swift; sourceTree = "<group>"; };
+		5AAFAB451F3393BD008DB9AB /* BleFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleFinder.swift; sourceTree = "<group>"; };
+		5AAFAB471F339414008DB9AB /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		5AAFAB4A1F33A81D008DB9AB /* HitagCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HitagCellView.xib; sourceTree = "<group>"; };
+		5AAFAB4C1F33B050008DB9AB /* HitagCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitagCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 		5AAFAB2D1F338521008DB9AB /* HitagPenetrator */ = {
 			isa = PBXGroup;
 			children = (
+				5AAFAB491F33A7FD008DB9AB /* HitagCellView */,
+				5AAFAB401F338CC3008DB9AB /* BleHandler */,
 				5AAFAB2E1F338521008DB9AB /* AppDelegate.swift */,
 				5AAFAB301F338521008DB9AB /* ViewController.swift */,
 				5AAFAB321F338521008DB9AB /* Main.storyboard */,
@@ -62,6 +76,26 @@
 				5AAFAB3A1F338521008DB9AB /* Info.plist */,
 			);
 			path = HitagPenetrator;
+			sourceTree = "<group>";
+		};
+		5AAFAB401F338CC3008DB9AB /* BleHandler */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFAB411F338CDA008DB9AB /* BleHandler.swift */,
+				5AAFAB431F338D15008DB9AB /* HitagCharacteristics.swift */,
+				5AAFAB451F3393BD008DB9AB /* BleFinder.swift */,
+				5AAFAB471F339414008DB9AB /* Utilities.swift */,
+			);
+			name = BleHandler;
+			sourceTree = "<group>";
+		};
+		5AAFAB491F33A7FD008DB9AB /* HitagCellView */ = {
+			isa = PBXGroup;
+			children = (
+				5AAFAB4A1F33A81D008DB9AB /* HitagCellView.xib */,
+				5AAFAB4C1F33B050008DB9AB /* HitagCellView.swift */,
+			);
+			name = HitagCellView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +160,7 @@
 			files = (
 				5AAFAB391F338521008DB9AB /* LaunchScreen.storyboard in Resources */,
 				5AAFAB361F338521008DB9AB /* Assets.xcassets in Resources */,
+				5AAFAB4B1F33A81D008DB9AB /* HitagCellView.xib in Resources */,
 				5AAFAB341F338521008DB9AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAFAB4D1F33B050008DB9AB /* HitagCellView.swift in Sources */,
+				5AAFAB481F339414008DB9AB /* Utilities.swift in Sources */,
+				5AAFAB461F3393BD008DB9AB /* BleFinder.swift in Sources */,
 				5AAFAB311F338521008DB9AB /* ViewController.swift in Sources */,
+				5AAFAB421F338CDA008DB9AB /* BleHandler.swift in Sources */,
+				5AAFAB441F338D15008DB9AB /* HitagCharacteristics.swift in Sources */,
 				5AAFAB2F1F338521008DB9AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +304,7 @@
 				DEVELOPMENT_TEAM = X4R5K8NKGR;
 				INFOPLIST_FILE = HitagPenetrator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TDW.HitagPenetrator;
+				PRODUCT_BUNDLE_IDENTIFIER = co.buybuddy.hitagpenetrator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -277,7 +317,7 @@
 				DEVELOPMENT_TEAM = X4R5K8NKGR;
 				INFOPLIST_FILE = HitagPenetrator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TDW.HitagPenetrator;
+				PRODUCT_BUNDLE_IDENTIFIER = co.buybuddy.hitagpenetrator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

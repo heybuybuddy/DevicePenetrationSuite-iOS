@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HitagCellView" rowHeight="93" id="LJN-mQ-PmL" customClass="HitagCellView" customModule="HitagPenetrator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="521" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LJN-mQ-PmL" id="e1E-aw-pqN">
+                <rect key="frame" x="0.0" y="0.0" width="521" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjc-6U-EcO">
+                        <rect key="frame" x="435" y="13" width="29" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="Pk5-jy-bI8"/>
+                            <constraint firstAttribute="height" constant="31" id="YIy-mb-goj"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="update"/>
+                        <connections>
+                            <action selector="didClickGetValue:" destination="LJN-mQ-PmL" eventType="touchUpInside" id="5gi-Qx-JRd"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hitag Identifier" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htv-zl-KX6">
+                        <rect key="frame" x="8" y="8" width="98" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Isa-Es-PRE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UUID : 3081-128412-2141-124413516134" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNi-zh-mLj">
+                        <rect key="frame" x="8" y="28" width="177.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="udP-4T-3Vr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qV6-R3-cex">
+                        <rect key="frame" x="8" y="63.5" width="50.5" height="21"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nex-zD-Kii">
+                        <rect key="frame" x="477" y="13" width="29" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="Qby-1S-4Wi"/>
+                            <constraint firstAttribute="width" constant="29" id="rc0-zj-xYU"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="notify"/>
+                        <connections>
+                            <action selector="didClickNotify:" destination="LJN-mQ-PmL" eventType="touchUpInside" id="6Dh-s9-57F"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r9-aR-VBF">
+                        <rect key="frame" x="477" y="54" width="29" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="g9f-14-gmP"/>
+                            <constraint firstAttribute="height" constant="31" id="q5c-1G-lhx"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="upload"/>
+                        <connections>
+                            <action selector="didClickSetValue:" destination="LJN-mQ-PmL" eventType="touchUpInside" id="uMQ-G1-tV2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="nex-zD-Kii" secondAttribute="trailing" constant="7" id="1L9-KQ-1J8"/>
+                    <constraint firstItem="qV6-R3-cex" firstAttribute="leading" secondItem="e1E-aw-pqN" secondAttribute="leadingMargin" id="57z-bF-uOh"/>
+                    <constraint firstItem="htv-zl-KX6" firstAttribute="leading" secondItem="e1E-aw-pqN" secondAttribute="leadingMargin" id="9sL-DW-hci"/>
+                    <constraint firstItem="7r9-aR-VBF" firstAttribute="top" secondItem="nex-zD-Kii" secondAttribute="bottom" constant="10" id="Ew3-0S-QXS"/>
+                    <constraint firstItem="nex-zD-Kii" firstAttribute="leading" secondItem="Mjc-6U-EcO" secondAttribute="trailing" constant="13" id="GBG-1K-TE2"/>
+                    <constraint firstItem="7r9-aR-VBF" firstAttribute="bottom" secondItem="e1E-aw-pqN" secondAttribute="bottomMargin" id="MAo-W7-l8E"/>
+                    <constraint firstItem="Mjc-6U-EcO" firstAttribute="top" secondItem="e1E-aw-pqN" secondAttribute="topMargin" constant="5" id="UcQ-BN-C58"/>
+                    <constraint firstItem="nex-zD-Kii" firstAttribute="top" secondItem="e1E-aw-pqN" secondAttribute="topMargin" constant="5" id="ahf-IE-o18"/>
+                    <constraint firstItem="XNi-zh-mLj" firstAttribute="leading" secondItem="e1E-aw-pqN" secondAttribute="leadingMargin" id="g4Z-lp-piQ"/>
+                    <constraint firstItem="htv-zl-KX6" firstAttribute="top" secondItem="e1E-aw-pqN" secondAttribute="topMargin" id="gSd-Dd-AhJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qV6-R3-cex" secondAttribute="bottom" constant="0.5" id="iB3-Pz-l0T"/>
+                    <constraint firstItem="XNi-zh-mLj" firstAttribute="top" secondItem="e1E-aw-pqN" secondAttribute="topMargin" constant="20" id="mYE-Uu-NeB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7r9-aR-VBF" secondAttribute="trailing" constant="7" id="n3c-3b-jRL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Mjc-6U-EcO" secondAttribute="bottom" constant="41" id="yP0-fS-Zz9"/>
+                    <constraint firstItem="qV6-R3-cex" firstAttribute="top" secondItem="XNi-zh-mLj" secondAttribute="bottom" constant="14.5" id="z7s-zV-cke"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="characteristicName" destination="htv-zl-KX6" id="hxE-kb-8b9"/>
+                <outlet property="characteristicUUID" destination="XNi-zh-mLj" id="fo7-Wm-ALc"/>
+                <outlet property="characteristicValue" destination="qV6-R3-cex" id="H1X-S4-UQY"/>
+                <outlet property="getValueButton" destination="Mjc-6U-EcO" id="nw4-DB-5eY"/>
+                <outlet property="notifyButton" destination="nex-zD-Kii" id="mAs-we-M7N"/>
+                <outlet property="notifyButtonRightMargin" destination="1L9-KQ-1J8" id="Lyh-ZF-pN1"/>
+                <outlet property="notifyButtonWidth" destination="rc0-zj-xYU" id="dzu-SV-MN8"/>
+                <outlet property="uploadValueButton" destination="7r9-aR-VBF" id="auL-Eh-Kmc"/>
+            </connections>
+            <point key="canvasLocation" x="18" y="-187"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="notify" width="128" height="128"/>
+        <image name="update" width="128" height="128"/>
+        <image name="upload" width="128" height="128"/>
+    </resources>
+</document>

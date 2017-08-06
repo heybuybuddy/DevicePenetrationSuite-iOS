@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HitagPenetrator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bkT-R3-1Ob">
+                                <rect key="frame" x="0.0" y="87" width="375" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="J4x-6u-iD0"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="x0y-8R-Pd7"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hitag ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hd-Mh-qv6">
+                                <rect key="frame" x="309" y="34" width="62" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aeY-9I-MQY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrr-c2-VbW">
+                                <rect key="frame" x="168" y="55" width="206" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="ZUy-el-6uE"/>
+                                    <constraint firstAttribute="height" constant="30" id="kJ6-eP-uOe"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Av6-wH-DEi">
+                                <rect key="frame" x="16" y="49" width="73" height="30"/>
+                                <state key="normal" title="Şifre TEST"/>
+                                <connections>
+                                    <action selector="passButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gvi-df-quO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="wrr-c2-VbW" firstAttribute="top" secondItem="2hd-Mh-qv6" secondAttribute="bottom" id="2q4-Ez-iuO"/>
+                            <constraint firstItem="bkT-R3-1Ob" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="87" id="KSt-6w-j7R"/>
+                            <constraint firstItem="wrr-c2-VbW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="15" id="NMF-a5-Bmw"/>
+                            <constraint firstAttribute="trailing" secondItem="bkT-R3-1Ob" secondAttribute="trailing" id="Qnj-sx-0t5"/>
+                            <constraint firstItem="bkT-R3-1Ob" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WVa-ig-f5M"/>
+                            <constraint firstItem="2hd-Mh-qv6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="c5g-mI-kiM"/>
+                            <constraint firstItem="2hd-Mh-qv6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="12" id="fId-2a-Exf"/>
+                            <constraint firstItem="bkT-R3-1Ob" firstAttribute="top" secondItem="Av6-wH-DEi" secondAttribute="bottom" constant="8" symbolic="YES" id="ksi-wk-IRD"/>
+                            <constraint firstItem="Av6-wH-DEi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qO3-rs-fPH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bkT-R3-1Ob" secondAttribute="bottom" id="spZ-NS-srW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="wrr-c2-VbW" id="zjD-sC-27h"/>
+                        <outlet property="tableView" destination="bkT-R3-1Ob" id="by0-NS-4H9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-175.19999999999999" y="65.217391304347828"/>
         </scene>
     </scenes>
 </document>
